@@ -10,10 +10,26 @@ let eqArrays = function(array1, array2) {
   return true;
 };
 
-let assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
+let assertArraysEqual = function(actual, expected) {
+  if (eqArrays(actual, expected)) {
+    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`❌ Assertion Failed: ${array1} !== ${array2}`);
+    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+const aa = [1, 2, 3];
+const bb = [1, 2, 3];
+assertArraysEqual(aa, bb);
+
+const cc = [1, "2", 3];
+const dd = [1, 2, 3];
+assertArraysEqual(cc, dd);
+
+const ee = [1, 2, 3, 4];
+const ff = [1, 2, 3];
+assertArraysEqual(ee, ff);
+
+const gg = [1, "hi", 2, "no"];
+const hh = [2, "hi", 1, "no"];
+assertArraysEqual(gg, hh);
