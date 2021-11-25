@@ -7,6 +7,7 @@ const takeUntil = function(array, callback) {
       results.push(item);
     }
   }
+  return results;
 }
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
@@ -49,8 +50,8 @@ const b = [20, 80, 60, 70, 30, 81, 20, 30, 22];
 const test2 = takeUntil(b, x => x <= 10 || x > 80);
 assertArraysEqual(test2, [20, 80, 60, 70, 30]);
 
-const c = ["George", "George", "George", "George", "George", "Jeorge", "George"];
+const c = ["George", "George", "George", "George", "George", "George", "George"];
 const test3 = takeUntil(c, function(x) {
   return x !== "George";
 });
-assertArraysEqual(test3, ["George", "George", "George", "George", "George"]);
+assertArraysEqual(test3, ["George", "George", "George", "George", "George", "George", "George"]);
