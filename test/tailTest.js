@@ -1,9 +1,14 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-console.log(tail([5, 6, 7, 8, 9]));
+describe('return array minus the first value, confirm by checking values instead', () => {
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3);
-assertEqual(tail(words)[0], "Lighthouse");
+  it('pass using an array of numbers', () => {
+    assert.deepEqual(tail([5, 6, 7, 8, 9]), [6, 7, 8, 9]);
+  });
+
+  it('pass when using an array of strings', () => {
+    assert.deepEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
+
+});

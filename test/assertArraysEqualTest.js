@@ -1,17 +1,30 @@
-const assertArraysEqual = require('../assertArraysEqual');
+//was just testing!
 
-const aa = [1, 2, 3];
-const bb = [1, 2, 3];
-assertArraysEqual(aa, bb);
+/*const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 
-const cc = [1, "2", 3];
-const dd = [1, 2, 3];
-assertArraysEqual(cc, dd);
+describe('check if assertArraysEqual is working', () => {
 
-const ee = [1, 2, 3, 4];
-const ff = [1, 2, 3];
-assertArraysEqual(ee, ff);
+  it('returns true if two arrays are identical', () => {
+    const actual = assertArraysEqual([1, 2, 3], [1, 2, 3]);
+    const expected = true;
+    assert.strictEqual(actual, expected);
+  });
 
-const gg = [1, "hi", 2, "no"];
-const hh = [2, "hi", 1, "no"];
-assertArraysEqual(gg, hh);
+  it('return false if one value is different', () => {
+    const actual = assertArraysEqual([1, 2, 3], [1, "2", 3]);
+    const expected = false;
+    assert.strictEqual(actual, expected);
+  });
+
+  it('return false if one array has one more value', () => {
+    const actual = assertArraysEqual(["1", "2", "3"], ["1", "2", "3", "4"]);
+    const expected = false;
+    assert.strictEqual(actual, expected);
+  });
+
+  it('return false if arrays are same but one value swaps place', () => {
+    assert.strictEqual(assertArraysEqual([1, "hi", 2, "no"], [2, "hi", 1, "no"]), false);
+  });
+
+});*/
