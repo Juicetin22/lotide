@@ -61,5 +61,5 @@ assertEqual(eqObjects(ef, ef2), true); // => true
 
 const fq = { c: "1", d: ["2", 3, "4"], e: "3" };
 const fq2 = { d: ["2", "3", "4"], c: "1", e: "3" };
-assertEqual(eqObjects(fq, fq2), false); // => true
+assertEqual(eqObjects(fq, fq2), false); // => false
 
