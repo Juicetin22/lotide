@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@justinh22/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A library of functions that provide a variety of easy-to-use utilities",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Juicetin22/lotide.git"
   },
-  "author": "",
+  "author": "Justin Huang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Juicetin22/lotide/issues"
